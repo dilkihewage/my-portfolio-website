@@ -106,7 +106,7 @@ const projectsData = [
     {
         title: "My Portfolio",
         description: "A responsive portfolio showcasing my projects, skills, and contact details.",
-        image: "assets/images/portfolio.jpg",
+        image: "assets/images/porfolio.png",
         technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
         sourceCode: "https://github.com/dilkihewage/my-portfolio-website.git"
     },
@@ -297,10 +297,39 @@ function getCertificateIcon(title) {
     return 'bi-award'; // default icon
 }
 
+// Education data
+const educationData = [
+    {
+        degree: "BSc (Hons) in Information Technology",
+        institution: "Sri Lanka Institute of Information Technology",
+        location: "Malabe, Sri Lanka",
+        period: "2022 - 2026"
+    },
+
+];
+
+function displayEducation() {
+    const timelineContainer = document.getElementById('education-timeline');
+    if (!timelineContainer) return;
+
+    timelineContainer.innerHTML = educationData.map(edu => `
+        <div class="education-item" data-aos="fade-up">
+            <div class="education-date">${edu.period}</div>
+            <div class="education-content">
+                <h5>${edu.degree}</h5>
+                <p class="institution">${edu.institution}</p>
+                <p class="text-muted">${edu.location}</p>
+
+            </div>
+        </div>
+    `).join('');
+}
+
 // Initialize projects and certificates on page load
 document.addEventListener('DOMContentLoaded', function() {
     displayProjects();
     displayCertificates();
+    displayEducation(); // Add this line
 
     // Initialize tooltips and other Bootstrap components
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));

@@ -10,7 +10,8 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--bg-blue) 0%, #e0f2fe 100%);
+    background:linear-gradient(to right, #062c64, #d5e2e7);
+;
     padding-top: 80px;
     padding-bottom: 40px;
     animation: fadeIn 1s ease-out;
@@ -134,10 +135,9 @@ footer a:hover {
 }
 
 .navbar {
-    background: linear-gradient(to right, #1e3a8a, #3b82f6); /* Example blue gradient */
+    background: transparent;
     padding: 0.75rem 0;
     transition: all 0.3s ease;
-    
 }
 
 .gradient-bg {
@@ -147,14 +147,24 @@ footer a:hover {
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--light-blue) !important;
     padding: 0.5rem 1rem;
     border: 2px solid transparent;
+     
 }
 
-.navbar-brand:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+ 
+
+.navbar-brand span {
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover span {
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
 }
 
 .nav-link {
@@ -162,12 +172,19 @@ footer a:hover {
     margin: 0 0.25rem;
     padding: 0.5rem 1rem !important;
     font-weight: 500;
-    color: #fff !important;
-    transition: color 0.3s ease;
+    background: linear-gradient(to right, #011f5f, #171717);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
     color: var(--light-blue) !important;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-link::after {
@@ -177,7 +194,7 @@ footer a:hover {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: var(--light-blue);
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -350,6 +367,45 @@ html {
     color: #007bff;
 }
 
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #007bff;
+}
+
+.education-timeline .education-item:nth-child(odd) {
+    margin-right: 50%;
+    padding-right: 50px;
+}
+
+.education-timeline .education-item:nth-child(even) {
+    margin-left: 50%;
+    padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .timeline-container::before {
+        left: 0;
+    }
+    
+    .education-timeline .education-item {
+        margin-left: 30px !important;
+        margin-right: 0 !important;
+        padding-left: 30px !important;
+        padding-right: 15px !important;
+    }
+}
+
 /* Certificate Button and Modal Styles */
 .view-certificate {
     background: #007bff;
@@ -507,4 +563,40 @@ html {
     width: 2.5rem;
     height: 2.5rem;
     margin-bottom: 1rem;
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(#2e568a45, #354255);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #0056b3, #004094);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+/* Section background colors */
+#education {
+    background: linear-gradient(135deg, #f6f8fc 0%, #e9f1f9 100%);
+}
+
+#certificates {
+    background: linear-gradient(135deg, #edf2f7 0%, #e2eaf3 100%);
+}
+
+#services {
+    background: linear-gradient(135deg, #f0f4f8 0%, #dbe4f0 100%);
 }
