@@ -330,7 +330,7 @@ const figmaProjects = [
     {
         title: "CareDoc",
         description: "Care Doc is a mobile healthcare app UI/UX project designed in Figma, focused on enabling fast and convenient doctor appointments, consultations, and prescription management",
-        image: "assets/images/caredoc.png",
+        image: "assets/images/care doc.png",
         link: "https://www.figma.com/design/namVhKEmN42g0AWWOzmQ6P/Untitled?node-id=0-1&t=wbHZsqtvhcpbZMKQ-1",
         preview: "https://www.figma.com/proto/namVhKEmN42g0AWWOzmQ6P/Untitled?node-id=1-2&p=f&t=fNZniONgwEJ9ZkH5-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
     },
