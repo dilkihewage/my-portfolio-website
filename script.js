@@ -328,18 +328,18 @@ function displayEducation() {
 // Figma projects data
 const figmaProjects = [
     {
-        title: "E-commerce UI Concept",
-        description: "Responsive product listing and checkout flows designed in Figma.",
-        image: "assets/images/figma-ec.png",
-        link: "https://www.figma.com/file/your-figma-link-1",
-        preview: "https://www.figma.com/proto/your-proto-link-1"
+        title: "CareDoc",
+        description: "Care Doc is a mobile healthcare app UI/UX project designed in Figma, focused on enabling fast and convenient doctor appointments, consultations, and prescription management",
+        image: "assets/images/caredoc.png",
+        link: "https://www.figma.com/design/namVhKEmN42g0AWWOzmQ6P/Untitled?node-id=0-1&t=wbHZsqtvhcpbZMKQ-1",
+        preview: "https://www.figma.com/proto/namVhKEmN42g0AWWOzmQ6P/Untitled?node-id=1-2&p=f&t=fNZniONgwEJ9ZkH5-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
     },
     {
-        title: "Mobile Banking Prototype",
-        description: "High-fidelity mobile banking prototype with micro-interactions.",
-        image: "assets/images/figma-bank.png",
-        link: "https://www.figma.com/file/your-figma-link-2",
-        preview: "https://www.figma.com/proto/your-proto-link-2"
+        title: "Lanka Holidays website redesign",
+        description: "Redesigning High-fidelity desktop application prototype with micro-interactions.",
+        image: "assets/images/lanka holidays.png",
+        link: "https://www.figma.com/design/aYfUTmRRPkPWySFySzWyBK/Untitled?node-id=0-1&t=Tyo2J5Rs2mlMMdvP-1",
+        preview: "https://www.figma.com/proto/aYfUTmRRPkPWySFySzWyBK/Untitled?node-id=358-505&p=f&t=iyumb2fVolLt9nYZ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=358%3A505&show-proto-sidebar=1"
     }
 ];
 
