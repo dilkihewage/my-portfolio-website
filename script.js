@@ -325,11 +325,48 @@ function displayEducation() {
     `).join('');
 }
 
-// Initialize projects and certificates on page load
+// Figma projects data
+const figmaProjects = [
+    {
+        title: "E-commerce UI Concept",
+        description: "Responsive product listing and checkout flows designed in Figma.",
+        image: "assets/images/figma-ec.png",
+        link: "https://www.figma.com/file/your-figma-link-1",
+        preview: "https://www.figma.com/proto/your-proto-link-1"
+    },
+    {
+        title: "Mobile Banking Prototype",
+        description: "High-fidelity mobile banking prototype with micro-interactions.",
+        image: "assets/images/figma-bank.png",
+        link: "https://www.figma.com/file/your-figma-link-2",
+        preview: "https://www.figma.com/proto/your-proto-link-2"
+    }
+];
+
+// Render Figma projects
+function displayFigmaProjects() {
+    const container = document.getElementById('figma-container');
+    if (!container) return;
+
+    container.innerHTML = figmaProjects.map(p => `
+        <div class="figma-card">
+            <img src="${p.image}" alt="${p.title}">
+            <h4 class="figma-title">${p.title}</h4>
+            <p class="figma-desc">${p.description}</p>
+            <div class="figma-actions">
+                <a href="${p.preview}" class="btn btn-figma" target="_blank" rel="noopener">Open Prototype</a>
+                <a href="${p.link}" class="btn btn-figma-outline" target="_blank" rel="noopener">Open File</a>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Initialize projects, certificates and education on page load
 document.addEventListener('DOMContentLoaded', function() {
     displayProjects();
     displayCertificates();
-    displayEducation(); // Add this line
+    displayEducation();
+    displayFigmaProjects(); // new call to render figma projects
 
     // Initialize tooltips and other Bootstrap components
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
