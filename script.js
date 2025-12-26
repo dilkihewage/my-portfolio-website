@@ -339,7 +339,7 @@ const figmaProjects = [
         description: "Redesigning High-fidelity desktop application prototype with micro-interactions.",
         image: "assets/images/lanka holidays.png",
         link: "https://www.figma.com/design/aYfUTmRRPkPWySFySzWyBK/Untitled?node-id=0-1&t=Tyo2J5Rs2mlMMdvP-1",
-        preview: "https://www.figma.com/proto/aYfUTmRRPkPWySFySzWyBK/Untitled?node-id=358-505&p=f&t=iyumb2fVolLt9nYZ-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=358%3A505&show-proto-sidebar=1"
+        preview: "https://www.figma.com/proto/aYfUTmRRPkPWySFySzWyBK/Untitled?node-id=1087-1880&t=XNV5ajdyTFyT5U2r-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=358%3A505&show-proto-sidebar=1"
     }
 ];
 
