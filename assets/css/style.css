@@ -655,7 +655,7 @@ html {
 }
 
 .figma-card .btn-figma {
-    background: linear-gradient(90deg, #ff6b6b, #ff8e72);
+    background: linear-gradient(90deg, #007bff, #0056b3);
     color: white;
     border: none;
     padding: 0.4rem 0.75rem;
